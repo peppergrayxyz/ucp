@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{fd09ddcf-7e2f-4748-a48c-671364065c77}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucCodepoint\ucCodepoint.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucCodepoint\ucCodepoint_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucCpReader\ucCpReader.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucCpReader\ucCpReader_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucd\ucEmojiData.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeBreakProperty.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeClusterBoundary.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucGcReader\ucGcReader.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucGcReader\ucGcReader_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucGraphemecluster\ucGraphemecluster.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucGraphemecluster\ucGraphemecluster_test.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucp.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucp_test.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)byteorder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucCodepoint\ucCodepoint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucCpReader\ucCpReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucd\ucEmojiData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeBreakProperty.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeBreakTest.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeClusterBoundary.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucGcReader\ucGcReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucGraphemecluster\ucGraphemecluster.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucReaderStatus\ucReaderStatus.h" />
+  </ItemGroup>
+</Project>

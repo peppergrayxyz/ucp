@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ucCpReader">
+      <UniqueIdentifier>{f454d155-c32e-4af6-8dbb-46a3afab025b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ucd">
+      <UniqueIdentifier>{b0f1d298-7e04-4334-9203-74c607f14b7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ucGcReader">
+      <UniqueIdentifier>{892754a6-4dab-442d-9676-b8fb7019ae51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ucGraphemecluster">
+      <UniqueIdentifier>{17cfb567-6392-4e8a-adea-1b5db43384d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ucReaderStatus">
+      <UniqueIdentifier>{21b78780-b8c9-4668-8d63-24a2c75aeb63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ucCodepoint">
+      <UniqueIdentifier>{97ccebd7-2732-4f20-b06f-da44d6e44670}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucCodepoint\ucCodepoint_test.c">
+      <Filter>ucCodepoint</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucCodepoint\ucCodepoint.c">
+      <Filter>ucCodepoint</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucCpReader\ucCpReader.c">
+      <Filter>ucCpReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucCpReader\ucCpReader_test.c">
+      <Filter>ucCpReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucd\ucEmojiData.c">
+      <Filter>ucd</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeBreakProperty.c">
+      <Filter>ucd</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeClusterBoundary.c">
+      <Filter>ucd</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucGcReader\ucGcReader.c">
+      <Filter>ucGcReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucGcReader\ucGcReader_test.c">
+      <Filter>ucGcReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucGraphemecluster\ucGraphemecluster.c">
+      <Filter>ucGraphemecluster</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucGraphemecluster\ucGraphemecluster_test.c">
+      <Filter>ucGraphemecluster</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucp.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ucp_test.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucCodepoint\ucCodepoint.h">
+      <Filter>ucCodepoint</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucCpReader\ucCpReader.h">
+      <Filter>ucCpReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucd\ucEmojiData.h">
+      <Filter>ucd</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeBreakProperty.h">
+      <Filter>ucd</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeBreakTest.h">
+      <Filter>ucd</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucd\ucGraphemeClusterBoundary.h">
+      <Filter>ucd</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucGcReader\ucGcReader.h">
+      <Filter>ucGcReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucGraphemecluster\ucGraphemecluster.h">
+      <Filter>ucGraphemecluster</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucReaderStatus\ucReaderStatus.h">
+      <Filter>ucReaderStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)byteorder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ucp.h" />
+  </ItemGroup>
+</Project>
